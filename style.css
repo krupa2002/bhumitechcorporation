@@ -1,0 +1,333 @@
+/* Reset and Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffde59;
+}
+
+/* Reset styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Navbar */
+header {
+    
+    padding: 49px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 30;
+}
+
+.nav-item {
+    margin: 0 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #ffcc00;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: #000000;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/Bhumitech Corporation.png') no-repeat center center/cover;
+
+}
+
+/* Products Section */
+/* Products Section */
+#products {
+    height: 100vh;
+    background: url('images/Bhumitech Corporationproductss.png') no-repeat center top; /* Image stays at top */
+    background-size: cover;
+    padding: 50px;  /* Adds spacing inside */
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Heading Styling */
+#products h2 {
+    font-size: 48px;  /* Adjust size */
+    font-weight: bold;
+    margin: 0; /* Removes extra space */
+    padding-top: 20px; /* Moves text slightly down */
+}
+
+
+/* Individual Product Styling */
+.product {
+    background: #ffcc00;  /* Light background with transparency */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%;  /* Adjust width */
+
+}
+
+
+
+
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 50px;
+    background: #ffcc00;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #333;
+        width: 150px;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Responsive Design */
+
+/* For tablets & smaller screens */
+/* For tablets & smaller screens */
+@media (max-width: 1024px) {
+    .hero {
+        background-size: cover;
+    }
+    
+
+    .btn {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-link {
+        font-size: 14px;  /* Smaller text */
+        padding: 5px 10px;  /* Reduce button size */
+    }
+
+    /* Adjust Hero Section */
+    .hero {
+        background: url('images/White and Black Whole Foods Mobile-First Website.png') 
+                    no-repeat center 40%;
+        background-size: contain;
+    }
+}
+
+
+
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 2px;
+        padding: 3px 2px;
+    }
+}
+
+
+/* Default Products Section */
+#products {
+    height: 100vh;
+    background: url('images/Bhumitech Corporationproductss.png') no-repeat center top;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Change Product Section Image for Mobile Screens */
+@media (max-width: 768px) {
+    #products {
+        background: url('images/mobileimage.png') no-repeat center top;
+        background-size: contain;
+        
+    }
+}
+
+
+
+/* For very small screens  */
+@media (max-width: 480px) {
+    #products h2 {
+        font-size: 24px;
+        
+    }
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    background: #ffde59;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    height: auto;
+    margin-top: -190px; /* Move section higher */
+    margin-left: -685px; /* Move section slightly left */
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1100px;
+    gap: 30px; /* Adjust space */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    max-width: 400px;
+    margin-left: -20px; /* Shift left slightly */
+}
+
+/* Vertical Line */
+.divider {
+    width: 2px;
+    background: black;
+    height: 150px;
+}
+
+/* QR Code Styling */
+.qr-code {
+    flex: 1;
+    text-align: center;
+    max-width: 180px;
+    margin-left: -20px; /* Shift left */
+}
+
+.qr-code img {
+    width: 120px;
+    height: auto;
+}
+
+.qr-code p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Center align content */
+        justify-content: center;
+        text-align: center;
+        padding: 30px 20px;
+        margin: 0 auto;  /* Ensure proper centering */
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .divider {
+        width: 70%; /* Adjust width for better balance */
+        height: 2px;
+        background: black;
+        margin: 15px auto;  /* Center horizontally */
+    }
+
+    .contact-info, .qr-code {
+        width: 90%;  /* Make sure it doesn’t shrink too much */
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .qr-code img {
+        width: 120px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
